@@ -19,7 +19,5 @@ public class App {
 		String savePath_firstName = "./customers_per_firstName.csv";
 		cdr.saveToCSV(customers_per_firstName, savePath_firstName, header_firstName);
 		
-
-		
 	}
 }
