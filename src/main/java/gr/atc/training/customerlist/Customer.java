@@ -69,4 +69,25 @@ public class Customer {
 	public void setCountry(String country) {
 		this.country = country;
 	}
+
+	public String getField(String field) {
+		switch(field) {
+		case "id":
+			return Integer.toString(id);
+		case "email":
+			return email;
+		case "first":
+			return first;
+		case "last":
+			return last;
+		case "company":
+			return company;
+		case "created_at":
+			return created_at;
+		case "country":
+			return country;
+		default:
+			return null;
+		}
+		}
 }

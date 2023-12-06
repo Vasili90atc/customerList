@@ -127,4 +127,14 @@ public class CustomerDataHandler {
 			e.printStackTrace();
 		}
 	}
+
+
+	public int getDistinctItemsCount(String columnName) {
+		HashSet<String> column_unique_values = new HashSet<String>();
+		for (int i=0; i<customers.size(); i++) {
+			Customer c = customers.get(i);
+			column_unique_values.add(c.getField(columnName));
+		}
+		return column_unique_values.size();
+	}
 }
